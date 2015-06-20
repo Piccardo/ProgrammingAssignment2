@@ -5,8 +5,6 @@ numberCases <- numberRowsColums^2
 x <- matrix(runif(numberCases, min = 0, max = 99),numberRowsColums)
 
 
-}
-
 ## The function cacheMatrix return a list
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -21,7 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, get = get,
              setinverse = setinverse,
              getinverse = getinverse)
-        
 }
 
 ## The function cacheSolve return a matrix that is the inverse of 'x'.
