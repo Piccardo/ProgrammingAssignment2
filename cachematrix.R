@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## The function createMatrix creates a new square matrix 'x
  ## First we create a matrix x. We can do using this instructions:
 numberRowsColums <- as.integer(runif(1, min = 2, max = 10))
@@ -9,6 +6,8 @@ x <- matrix(runif(numberCases, min = 0, max = 99),numberRowsColums)
 
 
 }
+
+## The function cacheMatrix return a list
 
 makeCacheMatrix <- function(x = matrix()) {
         inverse <- NULL
@@ -25,7 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
         
 }
 
-## The function cacheSolve return a matrix that is the inverse of 'x'
+## The function cacheSolve return a matrix that is the inverse of 'x'.
+## To check the function you have to run cacheSolve(makeCacheMatrix(x))
+## or save the list obtained with the function makeCacheMatrix
+## in the global environment
 
 cacheSolve <- function(x, ...) {
 
