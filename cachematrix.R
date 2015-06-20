@@ -1,4 +1,4 @@
- ## First we create a matrix.
+## First we create a matrix.
 ## We can do using this instructions:
 numberRowsColums <- as.integer(runif(1, min = 2, max = 10))
 numberCases <- numberRowsColums^2
