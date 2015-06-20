@@ -4,7 +4,6 @@ numberRowsColums <- as.integer(runif(1, min = 2, max = 10))
 numberCases <- numberRowsColums^2
 x <- matrix(runif(numberCases, min = 0, max = 99),numberRowsColums)
 
-
 ## The function cacheMatrix return a list.
 ## x is the name of the matrix you have created.
 
@@ -29,7 +28,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## x is the name of the list you have creted with makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
-
         inverse <- x$getinverse()
         if(!is.null(inverse)) {
                 message("getting cached data")
