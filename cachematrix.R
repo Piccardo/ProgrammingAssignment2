@@ -1,10 +1,12 @@
- ## First we create a matrix x. We can do using this instructions:
+ ## First we create a matrix.
+## We can do using this instructions:
 numberRowsColums <- as.integer(runif(1, min = 2, max = 10))
 numberCases <- numberRowsColums^2
 x <- matrix(runif(numberCases, min = 0, max = 99),numberRowsColums)
 
 
-## The function cacheMatrix return a list
+## The function cacheMatrix return a list.
+## x is the name of the matrix you have created.
 
 makeCacheMatrix <- function(x = matrix()) {
         inverse <- NULL
@@ -21,9 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## The function cacheSolve return a matrix that is the inverse of 'x'.
-## To check the function you have to run cacheSolve(makeCacheMatrix(x))
+## To check the function you have to run first makeCacheMatrix()
 ## or save the list obtained with the function makeCacheMatrix
 ## in the global environment
+## x is the name of the list you have creted with makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
 
